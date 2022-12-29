@@ -6,6 +6,7 @@ specifiers:
   '@types/node': ^18.11.9
   esbuild: ^0.14.54
   postcss: ^8.4.18
+  prettier: ^2.8.1
   solid-js: ^1.6.2
   solid-start: ^0.2.0
   solid-start-node: ^0.2.0
@@ -24,6 +25,7 @@ devDependencies:
   '@types/node': 18.11.18
   esbuild: 0.14.54
   postcss: 8.4.20
+  prettier: 2.8.1
   solid-start-node: 0.2.9_jwalk7b2fypsaofwlvuk3kjx2m
   typescript: 4.9.4
   vite: 3.2.5_@types+node@18.11.18
@@ -2416,6 +2418,12 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
 
   /pretty-bytes/6.0.0:
     resolution: {integrity: sha512-6UqkYefdogmzqAZWzJ7laYeJnaXDy2/J+ZqiiMtS7t7OfpXWTlaeGMwX8U6EFvPV/YWWEKRkS8hKS4k60WHTOg==}
