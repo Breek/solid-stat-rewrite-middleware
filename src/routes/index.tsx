@@ -6,6 +6,14 @@ export default function Home() {
     <main>
       <Title>Hello World</Title>
       <h1>Hello world!</h1>
+
+      <hr />
+      <p>
+        <a href="/about">About Company</a> (links to <code>/about</code> but
+        renders <code>/about-company.tsx</code>)
+      </p>
+      <hr />
+
       <Counter />
       <p>
         Visit{" "}
