@@ -1,0 +1,13 @@
+diff --git a/dist/components.jsx b/dist/components.jsx
+index 3fa422837851167cc6361e9c6af71d2e4fa183d0..4619038a51d1d0feea14e28deb88d7e223d91cc7 100644
+--- a/dist/components.jsx
++++ b/dist/components.jsx
+@@ -15,7 +15,7 @@ export const Routes = (props) => {
+     const parentRoute = useRoute();
+     const routeDefs = children(() => props.children);
+     const branches = createMemo(() => createBranches(routeDefs(), joinPaths(parentRoute.pattern, props.base || ""), Outlet));
+-    const matches = createMemo(() => getRouteMatches(branches(), router.location.pathname));
++    const matches = createMemo(() => getRouteMatches(branches(), globalThis.matchedRoute ? globalThis.matchedRoute : router.location.pathname));
+     const params = createMemoObject(() => {
+         const m = matches();
+         const params = {};

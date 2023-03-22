@@ -24,5 +24,10 @@
   },
   "engines": {
     "node": ">=16.8"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@solidjs/router@0.8.1": "patches/@solidjs__router@0.8.1.patch"
+    }
   }
 }

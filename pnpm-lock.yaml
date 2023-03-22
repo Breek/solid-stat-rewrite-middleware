@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  '@solidjs/router@0.8.1':
+    hash: djcdxy3nfwhfcdv6qt7noiyf74
+    path: patches/@solidjs__router@0.8.1.patch
+
 specifiers:
   '@solidjs/meta': ^0.28.0
   '@solidjs/router': ^0.8.1
@@ -16,7 +21,7 @@ specifiers:
 
 dependencies:
   '@solidjs/meta': 0.28.2_solid-js@1.6.15
-  '@solidjs/router': 0.8.1_solid-js@1.6.15
+  '@solidjs/router': 0.8.1_djcdxy3nfwhfcdv6qt7noiyf74_solid-js@1.6.15
   solid-js: 1.6.15
   solid-start: 0.2.23_uw4tibhr4nhwqrird7d42sfybu
   undici: 5.21.0
@@ -1492,12 +1497,13 @@ packages:
     dependencies:
       solid-js: 1.6.15
 
-  /@solidjs/router/0.8.1_solid-js@1.6.15:
+  /@solidjs/router/0.8.1_djcdxy3nfwhfcdv6qt7noiyf74_solid-js@1.6.15:
     resolution: {integrity: sha512-BjDNvUbeyUjBoxCH89QrYCh0Z6gtibT9q6+z5DCa5JjIcsWCQ+9IcETcWqzvWZlir/vObdK1p69hMW0R7MuetA==}
     peerDependencies:
       solid-js: ^1.5.3
     dependencies:
       solid-js: 1.6.15
+    patched: true
 
   /@types/babel__core/7.20.0:
     resolution: {integrity: sha512-+n8dL/9GWblDO0iU6eZAwEIJVr5DWigtle+Q6HLOrh/pdbXOhOtqzq8VPPE2zvNJzSKY4vH/z3iT3tn0A3ypiQ==}
@@ -2658,7 +2664,7 @@ packages:
       '@babel/preset-typescript': 7.18.6_@babel+core@7.21.3
       '@babel/template': 7.20.7
       '@solidjs/meta': 0.28.2_solid-js@1.6.15
-      '@solidjs/router': 0.8.1_solid-js@1.6.15
+      '@solidjs/router': 0.8.1_djcdxy3nfwhfcdv6qt7noiyf74_solid-js@1.6.15
       '@types/cookie': 0.5.1
       chokidar: 3.5.3
       compression: 1.7.4

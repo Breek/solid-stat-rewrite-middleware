@@ -14,6 +14,10 @@ export const useRewriteMiddleware = ({ forward }: MiddlewareInput) => {
       const url = new URL(`/about-company`, "http://internal");
       const request = new Request(url.href);
 
+      for (const [key, value] of event.request.headers) {
+        request.headers.set(key, value);
+      }
+
       const prevPath = event.request.headers.get("x-solid-referrer");
 
       let statusCode = 200;
